@@ -9,7 +9,7 @@
 <meta property="og:type" content="product">
 <meta property="og:title" content="Акумуляторний світильник 60 см з датчиком руху — 550 ₴">
 <meta property="og:description" content="Світло без мережі: вмикається від руху, заряджається від Type-C.">
-<meta property="og:image" content="assets/img/kitchen.webp">
+<meta property="og:image" content="assets/img/hero.webp">
 <link rel="preload" href="assets/fonts/InterTight.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/SvitloDot.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
@@ -69,7 +69,8 @@ header a.tel{font-size:14px;color:var(--sp-mute);text-decoration:none}
 .price b{font-family:var(--sp-font-dot);font-weight:400;font-size:64px;line-height:1;color:var(--sp-warm)}
 .price i{font-style:normal;font-weight:300;font-size:46px;color:var(--sp-warm)}
 .price small{font-size:14px;color:var(--sp-mute);flex-basis:100%}
-.hero .frame img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.hero-img{margin:-24px 0}
+.hero-img img{width:100%;aspect-ratio:1200/670;object-fit:cover;mix-blend-mode:screen;-webkit-mask-image:radial-gradient(75% 70% at 50% 50%,#000 60%,transparent 100%);mask-image:radial-gradient(75% 70% at 50% 50%,#000 60%,transparent 100%)}
 .hero .cta{display:flex;flex-direction:column;gap:12px}
 .hero .cta .btn{width:100%}
 .facts{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
@@ -83,7 +84,7 @@ header a.tel{font-size:14px;color:var(--sp-mute);text-decoration:none}
 .step::before{counter-increment:s;content:"0" counter(s);font-family:var(--sp-font-dot);font-size:18px;color:var(--sp-warm);background:var(--sp-card);border-radius:var(--sp-radius-chip);height:44px;display:grid;place-items:center}
 .step p{color:var(--sp-mute);font-size:15px}
 .split{display:grid;gap:28px;align-items:center}
-.split .frame img{width:100%;aspect-ratio:5/4;object-fit:cover}
+.split .frame img{width:100%;aspect-ratio:16/9;object-fit:cover}
 
 /* stat cards */
 .stats{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
@@ -178,8 +179,7 @@ footer img{width:120px}
   section{padding:104px 0}
   .hero{padding:120px 0 72px}
   .hero .wrap{grid-template-columns:1fr 1.1fr;align-items:center;gap:32px 56px!important}
-  .hero .frame img{aspect-ratio:10/7}
-  .hero .frame{grid-row:1/4;grid-column:2}
+  .hero-img{grid-row:1/4;grid-column:2;margin:0}
   .hero .cta{flex-direction:row}.hero .cta .btn{width:auto}
   .facts{grid-template-columns:repeat(4,1fr)}
   .split{grid-template-columns:1fr 1fr;gap:56px}
@@ -212,7 +212,7 @@ footer img{width:120px}
       <div class="chip"><span>60 см</span><span>Акумуляторний світильник</span></div>
       <h1>Світло без мережі <span class="mute">вмикається саме, коли ви поруч</span></h1>
     </div>
-    <div class="frame"><img src="assets/img/kitchen.webp" width="800" height="560" alt="Світильник Svitlo Plaza під кухонною шафою світить теплим світлом" fetchpriority="high"></div>
+    <div class="hero-img"><img src="assets/img/hero.webp" width="1200" height="670" alt="Акумуляторний світильник Svitlo Plaza 60 см світить теплим світлом у темряві" fetchpriority="high"></div>
     <div style="display:grid;gap:24px">
       <div class="price"><b>550</b><i>₴</i><small>Доставка Новою поштою · оплата при отриманні</small></div>
       <div class="cta">
@@ -242,7 +242,7 @@ footer img{width:120px}
         <div class="step"><div><h3>Забудьте про вимикач</h3><p>Датчик руху вмикає світло, коли ви проходите поруч. Датчик освітленості не дає йому вмикатися вдень у нічному режимі.</p></div></div>
       </div>
     </div>
-    <div class="frame"><img src="assets/img/sensor.webp" width="600" height="480" loading="lazy" alt="Людина заходить на кухню, світильник під шафою вмикається від руху"></div>
+    <div class="frame"><img src="assets/img/hallway.webp" width="1100" height="615" loading="lazy" alt="Темний коридор під час відключення світла, світильник під полицею світить теплим світлом"></div>
   </div>
 </section>
 

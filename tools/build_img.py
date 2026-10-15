@@ -14,3 +14,6 @@ c=cv2.imread(S+'3.jpg')
 for k,(x,y) in enumerate([(10,10),(270,10),(530,10),(10,322),(270,322)]): save(c[y:y+308,x:x+256],f'stairs-{k+1}')
 d=cv2.imread(S+'4.jpg')
 for t,(x,y) in zip([2700,3500,4500,5000,6500],[(18,430),(401,225),(18,225),(401,20),(18,20)]): save(d[y:y+200,x:x+380],f'temp-{t}')
+# Firefly: перший екран і коридор
+h=Image.open(S+'hero-product.png').convert('RGB'); h=h.crop((140,140,1236,752)); h.resize((1200,round(1200*h.height/h.width)),Image.LANCZOS).save(O+'hero.webp','WEBP',quality=80,method=6)
+Image.open(S+'hallway.png').convert('RGB').resize((1100,615),Image.LANCZOS).save(O+'hallway.webp','WEBP',quality=78,method=6)
