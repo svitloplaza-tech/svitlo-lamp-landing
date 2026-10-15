@@ -20,3 +20,9 @@
 - Хостинг: Cloudflare Pages (безкоштовно), піддомен svitloplaza.store.
 - Контакти: Telegram, Viber, адреса магазину. Відгуків не буде.
 - Фото: тільки виробника, без логотипу AIER, з українськими підписами в стилі бренду.
+
+## Структура
+- `public/` — сайт (index.html, assets). Cloudflare Pages: build output = `public`.
+- `functions/api/order.js` — прийом замовлень → Telegram (змінні TG_TOKEN, TG_CHAT_ID).
+- `tools/build_img.py` — обробка фото виробника (запуск з кореня: `python3 tools/build_img.py`).
+- Пікселі: заповнити `CFG` на початку скрипта в `public/index.html`.
