@@ -26,3 +26,9 @@
 - `functions/api/order.js` — прийом замовлень → Telegram (змінні TG_TOKEN, TG_CHAT_ID).
 - `tools/build_img.py` — обробка фото виробника (запуск з кореня: `python3 tools/build_img.py`).
 - Пікселі: заповнити `CFG` на початку скрипта в `public/index.html`.
+
+## Розгортання
+- Cloudflare Pages, проєкт `svitlo-light` → https://svitlo-light.pages.dev
+- Деплой (direct upload): `wrangler pages deploy public --project-name svitlo-light --branch main` з кореня репозиторію (папка `functions/` підхоплюється автоматично).
+- Секрети проєкту: `TG_TOKEN` (бот @SvitloPlaza_bot), `TG_CHAT_ID`.
+- Бот також підключений до SalesDrive через webhook — не видаляти webhook (сайт використовує лише sendMessage).
